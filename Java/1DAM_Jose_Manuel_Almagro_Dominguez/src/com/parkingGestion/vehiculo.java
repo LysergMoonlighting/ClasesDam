@@ -1,5 +1,6 @@
 package com.parkingGestion;
 
-public class vehiculo {
-
+public abstract class vehiculo {
+	String matricula;
+	
 }

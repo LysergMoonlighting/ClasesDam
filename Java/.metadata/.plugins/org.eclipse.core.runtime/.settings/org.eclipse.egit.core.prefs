@@ -1,5 +1,6 @@
 GitRepositoriesView.GitDirectories=
 GitRepositoriesView.GitDirectories.relative=
 RepositoryGroups.uuids=
-RepositorySearchDialogSearchPath=C\:\\Users\\lyser\\git
+RepositorySearchDialogDeepSearch=true
+RepositorySearchDialogSearchPath=C\:\\Users\\lyser\\OneDrive\\Documents\\ClasesDam\\Java
 eclipse.preferences.version=1

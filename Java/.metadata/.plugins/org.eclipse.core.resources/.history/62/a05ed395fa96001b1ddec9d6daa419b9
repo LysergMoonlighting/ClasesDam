@@ -1,0 +1,35 @@
+package com.parkingGestion;
+
+import java.util.ArrayList;
+
+
+public class parking {
+	public static void menu() {
+		items= new ArrayList<Item>();
+		int resp=-1;
+		do {
+			try {
+				resp= imprimirMenu(resp);
+				switch (resp) {
+					case 0: registrarItem();
+						break;
+					case 1: mostrarAlmacen();
+						break;
+					case 2: buscarItem();
+						break;
+					case 3: borrarItem();
+						break;
+					case 4: venderItem();
+						break;
+					case 5: salida();
+						break;
+					default: System.out.println("ERROR, NO SE HA ENCONTRADO LA OPCION");
+						break;
+				}
+			} catch(NumberFormatException ex) {
+				System.out.println("ERROR, NO SE HA INTRODUCIDO UN VALOR NUMERICO");
+			}
+			
+		}while(resp!=5);
+	}
+}

@@ -2456,3 +2456,6 @@ java.lang.Exception: The project description file (.project) for 'Haz_la_guerra_
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2021-04-06 18:42:24.771
 !MESSAGE close() called when useCnt is already zero for Repository[C:\Users\lyser\git\Haz-la-guerra-y-no-el-amor\.git]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-04-06 18:44:43.305
+!MESSAGE close() called when useCnt is already zero for Repository[C:\xampp\htdocs\Haz-la-guerra-y-no-el-amor\.git]

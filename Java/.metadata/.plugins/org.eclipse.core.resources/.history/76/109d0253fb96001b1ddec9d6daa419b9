@@ -1,0 +1,38 @@
+package com.parkingGestion;
+
+import java.util.ArrayList;
+
+import javax.swing.JOptionPane;
+
+
+public class parking {
+	public static void menu() {
+		
+		int resp=-1;
+		do {
+			try {
+				resp= imprimirMenu(resp);
+				switch (resp) {
+					
+					default: System.out.println("ERROR, NO SE HA ENCONTRADO LA OPCION");
+						break;
+				}
+			} catch(NumberFormatException ex) {
+				System.out.println("ERROR, NO SE HA INTRODUCIDO UN VALOR NUMERICO");
+			}
+			
+		}while(resp!=5);
+	}
+	
+	private static int imprimirMenu(int resp){
+        String [] opciones = {"Registrar","Imprimir","Buscar","Borrar","Vender","Salir"};
+        resp= JOptionPane.showOptionDialog(null,"1) Registrar un nuevo Item\n"
+                + "2) Imprimir listado de existencias\n"
+                + "3) Buscar un item\n"
+                + "4) Borrar un Item\n"
+                + "5) Vender un Item\n"
+                + "6) Salir de la aplicación\n" , "Menu" , JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, opciones, null);
+        return resp;
+
+    }
+}
