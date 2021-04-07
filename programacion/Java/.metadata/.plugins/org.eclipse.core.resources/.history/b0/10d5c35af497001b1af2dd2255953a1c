@@ -1,0 +1,10 @@
+package com.parkingGestion;
+
+public abstract class vehiculo {
+	
+	String matricula;
+	String marca;
+	String color;
+	
+	
+}

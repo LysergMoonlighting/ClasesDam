@@ -33,17 +33,17 @@ public class parking {
 											
 											
 										}else if(tipo==1) {
-											
+											matricula=matriculaVehiculo(matricula);
 											marca=marcaVehiculo(marca);
 											color=colorVehiculo(color);
 											
 										}else if(tipo==2) {
-											
+											matricula=matriculaVehiculo(matricula);
 											marca=marcaVehiculo(marca);
 											color=colorVehiculo(color);
 											
 										}else if(tipo==3) {
-											
+											matricula=matriculaVehiculo(matricula);
 											marca=marcaVehiculo(marca);
 											color=colorVehiculo(color);
 											
@@ -112,7 +112,7 @@ public class parking {
 		String[] options = {"Rojo", "Azul", "Blanco", "Verde", "Naranja", "Negro"};
         
         color = (String)JOptionPane.showInputDialog(null, "De que color es el coche?", 
-                "Datos del coche", JOptionPane.QUESTION_MESSAGE, null, options, options[5]);
+                "Datos del coche", JOptionPane.PLAIN_MESSAGE, null, options, null);
         System.out.println(color);
 			
 			return color;
@@ -123,7 +123,7 @@ public class parking {
 		String[] options = {"mercedes", "toyota", "citroem", "dacia", "fiat", "opel"};
         
         marca = (String)JOptionPane.showInputDialog(null, "De que color es el coche?", 
-                "Datos del coche", JOptionPane.QUESTION_MESSAGE, null, options, options[5]);
+                "Datos del coche", JOptionPane.PLAIN_MESSAGE, null, options,null);
         System.out.println(marca);
 			
 			return marca;

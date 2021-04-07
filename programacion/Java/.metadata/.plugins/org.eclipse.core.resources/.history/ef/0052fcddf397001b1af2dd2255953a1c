@@ -1,0 +1,19 @@
+package com.parkingGestion;
+
+public abstract class vehiculo {
+	
+	String matricula;
+	String marca;
+	String color;
+	
+	public String getMatricula() {
+		return matricula;
+	}
+	public void setMatricula(String matricula) {
+		this.matricula = matricula;
+	}
+	public vehiculo(String matricula) {
+		this.matricula = matricula;
+	}
+	
+}
