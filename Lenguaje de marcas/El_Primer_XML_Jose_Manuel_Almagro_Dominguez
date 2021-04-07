@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<alumno>
+        <nombre_alumno>
+            <nombre></nombre>
+            <apellido></apellido>
+        </nombre_alumno>
+    <fechanacimiento></fechanacimiento>
+    <dni></dni>
+    <contacto>
+        <direccion>
+                    <calle></calle>
+                    <localidad></localidad>
+                    <cod_postal></cod_postal>
+        </direccion>
+        <telefono></telefono>
+        <email></email>
+    </contacto>
+    <curso></curso>
+    <esRepetidor></esRepetidor>
+    <asignatura1>
+    <nombre></nombre>
+    <nota1></nota1>
+    <nota2></nota2>
+    <nota3></nota3>
+    <media></media>
+    <faltas></faltas>
+    </asignatura1>
+    <asignatura2>
+    <nombre></nombre>
+    <nota1></nota1>
+    <nota2></nota2>
+    <nota3></nota3>
+    <media></media>
+    <faltas></faltas>
+    </asignatura2>
+    <asignatura3>
+    <nombre></nombre>
+    <nota1></nota1>
+    <nota2></nota2>
+    <nota3></nota3>
+    <media></media>
+    <faltas></faltas>
+    </asignatura3>
+</alumno>
