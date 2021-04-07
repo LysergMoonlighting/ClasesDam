@@ -2,11 +2,14 @@
 
 <alumno>
         <nombre_alumno>
-            <nombre></nombre>
-            <apellido></apellido>
+            <nombre>Jose Manuel</nombre>
+            <apellido1>Almagro</apellido1>
+            <apellido2>Dominguez</apellido2>
         </nombre_alumno>
-    <fechanacimiento></fechanacimiento>
+    <fechanacimiento>12/08/1996</fechanacimiento>
     <dni></dni>
+    
+    
     <contacto>
         <direccion>
                     <calle></calle>
@@ -16,30 +19,18 @@
         <telefono></telefono>
         <email></email>
     </contacto>
+    
+    
     <curso></curso>
     <esRepetidor></esRepetidor>
-    <asignatura1>
-    <nombre></nombre>
-    <nota1></nota1>
-    <nota2></nota2>
-    <nota3></nota3>
-    <media></media>
-    <faltas></faltas>
+    
+    <asignatura>
+              <nombreasignatura></nombreasignatura>
+              <notaT1></notaT1>
+              <notaT2></notaT2>
+              <notaT3></notaT3>
+              <media></media>
+              <faltas></faltas>
     </asignatura1>
-    <asignatura2>
-    <nombre></nombre>
-    <nota1></nota1>
-    <nota2></nota2>
-    <nota3></nota3>
-    <media></media>
-    <faltas></faltas>
-    </asignatura2>
-    <asignatura3>
-    <nombre></nombre>
-    <nota1></nota1>
-    <nota2></nota2>
-    <nota3></nota3>
-    <media></media>
-    <faltas></faltas>
-    </asignatura3>
+    
 </alumno>

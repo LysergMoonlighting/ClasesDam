@@ -1,0 +1,20 @@
+package com.parkingGestion;
+
+public class moto extends vehiculo{
+	public enum motoType{
+		mercedes,
+		toyota,
+		citroem,
+		dacia,
+		fiat,
+		opel,
+	}
+	public enum motoColor{
+		blanco,
+		negro,
+		rojo,
+		azul,
+		verde,
+		naranja,
+	}
+}

@@ -1,0 +1,37 @@
+package com.parkingGestion;
+
+public class coche extends vehiculo{
+	
+	public enum carType{
+		mercedes,
+		toyota,
+		citroem,
+		dacia,
+		fiat,
+		opel,
+	}
+	public enum carColor{
+		blanco,
+		negro,
+		rojo,
+		azul,
+		verde,
+		naranja,
+	}
+	String carType;
+	String carColor;
+	
+	
+}
+public String getCarType() {
+	return carType;
+}
+public void setCarType(String carType) {
+	this.carType = carType;
+}
+public String getCarColor() {
+	return carColor;
+}
+public void setCarColor(String carColor) {
+	this.carColor = carColor;
+}

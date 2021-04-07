@@ -1,0 +1,85 @@
+package com.parkingGestion;
+
+import java.util.ArrayList;
+
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JOptionPane;
+
+public class parking {
+	
+	
+	
+	
+	public static void menu() {//Menu de inicio con la funcion de salir
+		
+		int resp=-1;
+		do {
+				resp= imprimirMenu(resp);
+				if (resp==0) {
+					int tipo=-1;
+					tipoVehiculo(tipo);
+					
+					
+								
+								
+					
+				}else if(resp==1) {
+					int color;
+					colorVehiculo(color);
+					
+					
+				}else if(resp==2) {
+					
+					
+					
+				}else if(resp==3) {
+					
+					MensajeSalida();// saliendo de la aplicación
+					
+				}
+				else {
+					
+					System.out.println("No se como has conseguido meter otro valor jeje");
+				}
+					
+				 
+				
+
+			
+		}while(resp!=3);
+	}
+
+	private static int imprimirMenu(int resp){//mensaje que muestra el menu para el cliente
+        String [] opciones = {"Añadir plaza","Sacar coche","Buscar vehiculo","Salir"};
+        resp= JOptionPane.showOptionDialog(null,"Seleccione la opción que desea efectuar" , "Menu" , JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, opciones, null);
+        return resp;
+
+    }
+	private static int tipoVehiculo(int tipo) {
+		 	String [] opciones = {"Coche","Moto","Furgoneta","Carabanas","volver"};
+	        tipo= JOptionPane.showOptionDialog(null,"Que tipo de vehiculo va a depositar?" , "Tipo de vehiculo" , JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, opciones, null);
+	        return tipo;
+	}
+	
+	private static void colorVehiculo(int color) {
+		Integer[] options = {2, 3, 5, 7, 9, 11};
+        int n = (Integer)JOptionPane.showInputDialog(null, "Pick a number that is not prime:", 
+                "Prime numbers", JOptionPane.QUESTION_MESSAGE, null, options, options[2]);
+        System.out.println(n);
+	}
+	
+	vehiculo [][] aparcamiento = new vehiculo [5][5];//creacion de la matriz para los coches
+	
+	
+
+	
+	
+	
+	
+	
+	private static void MensajeSalida()// ventana emergente de salida
+	{
+		JOptionPane.showMessageDialog(null, "Gracias por usar la aplicación");
+	}
+}

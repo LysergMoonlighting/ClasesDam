@@ -1,12 +1,13 @@
 package com.parkingGestion;
 
 public class coche extends vehiculo{
-	
-	public enum carType{
-		
+
+	public coche(int id, String matricula) {
+		super(id, matricula);
+		// TODO Auto-generated constructor stub
 	}
-	public enum carColor{
-		
-	}
+
 	
+	
+
 }

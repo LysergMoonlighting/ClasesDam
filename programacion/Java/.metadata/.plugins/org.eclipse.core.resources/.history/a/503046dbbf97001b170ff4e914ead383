@@ -1,0 +1,24 @@
+package com.parkingGestion;
+
+public class furgoneta extends vehiculo{
+	int plazas;
+	public enum fugonType{
+		mercedes,
+		toyota,
+		citroem,
+		dacia,
+		fiat,
+		opel,
+	}
+	public enum furgonColor{
+		blanco,
+		negro,
+		rojo,
+		azul,
+		verde,
+		naranja,
+		
+	}
+	String furgonType;
+	String furgonColor;
+}

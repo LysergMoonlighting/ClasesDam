@@ -1,0 +1,22 @@
+package com.parkingGestion;
+
+public class coche extends vehiculo{
+	
+	public enum carType{
+		mercedes,
+		toyota,
+		citroem,
+		dacia,
+		fiat,
+		opel,
+	}
+	public enum carColor{
+		blanco,
+		negro,
+		rojo,
+		azul,
+		verde,
+		naranja,
+	}
+	
+}

@@ -1,0 +1,7 @@
+package com.parkingGestion;
+
+public abstract class vehiculo {
+	int id;
+	String matricula;
+	
+}
