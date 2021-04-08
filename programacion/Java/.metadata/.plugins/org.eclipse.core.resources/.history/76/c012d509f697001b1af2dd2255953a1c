@@ -33,7 +33,7 @@ public class parking {
 												if (marca!="null") {
 													color=colorVehiculo(color);
 													if(color!="null") {
-														coche(matricula, marca,  color);
+														
 													}
 												}
 											}
@@ -155,7 +155,7 @@ public class parking {
 	
 	vehiculo [][] aparcamiento = new vehiculo [5][5];//creacion de la matriz para los coches
 	
-	ArrayList<ArrayList<objeto>> nombreArray = new ArrayList<objeto>(numero de filas);
+	
 
 	
 	

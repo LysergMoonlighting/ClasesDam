@@ -26,19 +26,9 @@ public class parking {
 					
 							do {
 										if (tipo==0) {
-											
 											matricula=matriculaVehiculo(matricula);
-											if(matricula!="null") {
-												marca=marcaVehiculo(marca);
-												if (marca!="null") {
-													color=colorVehiculo(color);
-													if(color!="null") {
-														coche(matricula, marca,  color);
-													}
-												}
-											}
-											
-											
+											marca=marcaVehiculo(marca);
+											color=colorVehiculo(color);
 											
 											
 											
@@ -142,7 +132,7 @@ public class parking {
 	
 	private static String matriculaVehiculo(String matricula) {
 		
-		matricula=JOptionPane.showInputDialog(null,"Introduzca su matricula", "Matricula", JOptionPane.PLAIN_MESSAGE);
+		JOptionPane.showInputDialog(null,"Introduzca el codigo del producto", "Matricula", JOptionPane.PLAIN_MESSAGE);
 		System.out.println(matricula);
 			return matricula;
 	}
@@ -155,7 +145,7 @@ public class parking {
 	
 	vehiculo [][] aparcamiento = new vehiculo [5][5];//creacion de la matriz para los coches
 	
-	ArrayList<ArrayList<objeto>> nombreArray = new ArrayList<objeto>(numero de filas);
+	
 
 	
 	
