@@ -8,37 +8,13 @@ import javax.swing.JPanel;
 
 public class parking {
 	
-	
+	public static vehiculo [][] aparcamiento = new vehiculo [5][5];
 	
 	
 	public static void menu() {//Menu de inicio con la funcion de salir
 		
 		int resp=-1;
 		do {
-			
-			
-		        int rows = 2, columns = 3;
-		        int[][] firstMatrix = { {2, 3, 4}, {5, 2, 3} };
-		        int[][] secondMatrix = { {-4, 5, 3}, {5, 6, 3} };
-
-		        // Adding Two matrices
-		        int[][] sum = new int[rows][columns];
-		        for(int i = 0; i < rows; i++) {
-		            for (int j = 0; j < columns; j++) {
-		                sum[i][j] = firstMatrix[i][j] + secondMatrix[i][j];
-		            }
-		        }
-
-		        // Displaying the result
-		        System.out.println("Sum of two matrices is: ");
-		        for(int[] row : sum) {
-		            for (int column : row) {
-		                System.out.print(column + "    ");
-		            }
-		            System.out.println();
-		        }
-		    
-		
 			
 			
 			String matricula ="none";
@@ -59,6 +35,19 @@ public class parking {
 												if (marca!="null") {
 													color=colorVehiculo(color);
 													if(color!="null") {
+														 for(int i = 0; i < 5; i++) {
+													            for (int j = 0; j < 5; j++) {													            	
+													            														            	
+													            	if (aparcamiento[i][j]== null) { 													            		
+													            		
+													            		aparcamiento[i][j]=  new coche( matricula,  marca ,color);
+													            		System.out.println(aparcamiento[i][j]);
+														            	i=4;
+														            	j=4;
+														            	
+																    } 
+													            }
+													        }
 														
 													}
 												}
@@ -70,13 +59,51 @@ public class parking {
 											
 										}else if(tipo==1) {
 											matricula=matriculaVehiculo(matricula);
-											marca=marcaVehiculo(marca);
-											color=colorVehiculo(color);
+											if(matricula!="null") {
+												marca=marcaVehiculo(marca);
+												if (marca!="null") {
+													color=colorVehiculo(color);
+													if(color!="null") {
+														 for(int i = 0; i < 5; i++) {
+													            for (int j = 0; j < 5; j++) {													            	
+													            														            	
+													            	if (aparcamiento[i][j]== null) { 													            		
+													            		
+													            		aparcamiento[i][j]=  new moto( matricula,  marca ,color);
+														            	i=4;
+														            	j=4;
+														            	
+																    } 
+													            }
+													        }
+														
+													}
+												}
+											}
 											
 										}else if(tipo==2) {
 											matricula=matriculaVehiculo(matricula);
-											marca=marcaVehiculo(marca);
-											color=colorVehiculo(color);
+											if(matricula!="null") {
+												marca=marcaVehiculo(marca);
+												if (marca!="null") {
+													color=colorVehiculo(color);
+													if(color!="null") {
+														 for(int i = 0; i < 5; i++) {
+													            for (int j = 0; j < 5; j++) {													            	
+													            														            	
+													            	if (aparcamiento[i][j]== null) { 													            		
+													            		
+													            		aparcamiento[i][j]=  new furgoneta( matricula,  marca ,color);
+														            	i=4;
+														            	j=4;
+														            	
+																    } 
+													            }
+													        }
+														
+													}
+												}
+											}
 											
 										}else if(tipo==3) {
 											matricula=matriculaVehiculo(matricula);
@@ -93,15 +120,29 @@ public class parking {
 					
 					
 				}else if(resp==1) {
+					aparcamiento();
 				
-					
+					for(int i = 0; i < 5; i++) {
+						
+			            for (int j = 0; j < 5; j++) {													            	
+			            	System.out.print("|");					            	
+			            	System.out.print(aparcamiento[i][j]);
+			            }
+			            System.out.println("|");
+			            System.out.println("----------------------------------");	
+			        }
 					
 					
 				}else if(resp==2) {
 					
 					
+				
 					
 				}else if(resp==3) {
+					
+					
+					
+				}else if(resp==4) {
 					
 					MensajeSalida();// saliendo de la aplicación
 					
@@ -121,14 +162,14 @@ public class parking {
 				
 
 			
-		}while(resp!=3);
+		}while(resp!=4);
 	}
 	
 	
 	
 
 	private static int imprimirMenu(int resp){//mensaje que muestra el menu para el cliente
-        String [] opciones = {"Añadir plaza","Sacar coche","Buscar vehiculo","Salir"};
+        String [] opciones = {"Añadir plaza","Mostrar vehiculos","Sacar vehiculo","Buscar vehiculo","Salir"};
         resp= JOptionPane.showOptionDialog(null,"Seleccione la opción que desea efectuar" , "Menu" , JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, opciones, null);
         return resp;
 
@@ -149,7 +190,6 @@ public class parking {
         
         color = (String)JOptionPane.showInputDialog(null, "De que color es el coche?", 
                 "Datos del coche", JOptionPane.PLAIN_MESSAGE, null, options, null);
-        System.out.println(color);
 			
 			return color;
 	}
@@ -160,7 +200,6 @@ public class parking {
         
         marca = (String)JOptionPane.showInputDialog(null, "De que color es el coche?", 
                 "Datos del coche", JOptionPane.PLAIN_MESSAGE, null, options,null);
-        System.out.println(marca);
 			
 			return marca;
 	}
@@ -169,12 +208,23 @@ public class parking {
 	private static String matriculaVehiculo(String matricula) {
 		
 		matricula=JOptionPane.showInputDialog(null,"Introduzca su matricula", "Matricula", JOptionPane.PLAIN_MESSAGE);
-		System.out.println(matricula);
 			return matricula;
 	}
 	
 	
+	private static void aparcamiento() {
+		
+		for(int i=0;i<3;i++)
+		{    
+		    for(int j=0;j<3;j++){
+		    	JOptionPane.showMessageDialog(null,aparcamiento[i][j]+"|");
+		    }
+		    
+		}
 
+		
+	
+	}
 	
 	
 	

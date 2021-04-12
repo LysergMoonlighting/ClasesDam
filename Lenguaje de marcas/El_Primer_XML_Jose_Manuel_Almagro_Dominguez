@@ -12,25 +12,87 @@
     
     <contacto>
         <direccion>
-                    <calle></calle>
-                    <localidad></localidad>
-                    <cod_postal></cod_postal>
+                    <calle>calle1</calle>
+                    <localidad>cordoba </localidad>
+                    <cod_postal>14711</cod_postal>
         </direccion>
-        <telefono></telefono>
-        <email></email>
+        <telefono>666666666</telefono>
+        <email>correo@gmail.com</email>
     </contacto>
     
     
-    <curso></curso>
-    <esRepetidor></esRepetidor>
+    <curso>1</curso>
+    <esRepetidor>no</esRepetidor>    
+</alumno>
+<alumno>
+        <nombre_alumno>
+            <nombre>Juan Manuel</nombre>
+            <apellido1>Almagra</apellido1>
+            <apellido2>Domingo</apellido2>
+        </nombre_alumno>
+    <fechanacimiento>12/07/1993</fechanacimiento>
+    <dni></dni>
     
-    <asignatura>
-              <nombreasignatura></nombreasignatura>
-              <notaT1></notaT1>
-              <notaT2></notaT2>
-              <notaT3></notaT3>
-              <media></media>
-              <faltas></faltas>
-    </asignatura1>
     
+    <contacto>
+        <direccion>
+                    <calle>calle6</calle>
+                    <localidad>cordoba </localidad>
+                    <cod_postal>14711</cod_postal>
+        </direccion>
+        <telefono>666677766</telefono>
+        <email>correo@gmail.com</email>
+    </contacto>
+    
+    
+    <curso>1</curso>
+    <esRepetidor>si</esRepetidor>    
+</alumno>
+<alumno>
+        <nombre_alumno>
+            <nombre>Pancraciol</nombre>
+            <apellido1>constance</apellido1>
+            <apellido2>borring</apellido2>
+        </nombre_alumno>
+    <fechanacimiento>1/12/1992</fechanacimiento>
+    <dni></dni>
+    
+    
+    <contacto>
+        <direccion>
+                    <calle>calle1</calle>
+                    <localidad>cordoba </localidad>
+                    <cod_postal>14711</cod_postal>
+        </direccion>
+        <telefono>663333366</telefono>
+        <email>correo@gmail.com</email>
+    </contacto>
+    
+    
+    <curso>2</curso>
+    <esRepetidor>si</esRepetidor>    
+</alumno>
+<alumno>
+        <nombre_alumno>
+            <nombre>Jeff</nombre>
+            <apellido1>flores</apellido1>
+            <apellido2>campo</apellido2>
+        </nombre_alumno>
+    <fechanacimiento>12/08/1996</fechanacimiento>
+    <dni></dni>
+    
+    
+    <contacto>
+        <direccion>
+                    <calle>calle1</calle>
+                    <localidad>cordoba </localidad>
+                    <cod_postal>14711</cod_postal>
+        </direccion>
+        <telefono>6888886666</telefono>
+        <email>correo@gmail.com</email>
+    </contacto>
+    
+    
+    <curso>2</curso>
+    <esRepetidor>no</esRepetidor>    
 </alumno>

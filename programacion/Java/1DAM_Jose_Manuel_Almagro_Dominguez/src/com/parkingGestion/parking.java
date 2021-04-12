@@ -41,6 +41,7 @@ public class parking {
 													            	if (aparcamiento[i][j]== null) { 													            		
 													            		
 													            		aparcamiento[i][j]=  new coche( matricula,  marca ,color);
+													            		
 													            		System.out.println(aparcamiento[i][j]);
 														            	i=4;
 														            	j=4;
