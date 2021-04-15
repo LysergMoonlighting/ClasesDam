@@ -1,0 +1,9 @@
+package agroalimentaria;
+
+
+public final class Refrigerados extends Productos{
+	private String codOrganismo;
+	private float temperatura;
+	private String tipoTemperatura;
+	
+}

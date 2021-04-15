@@ -1,14 +1,15 @@
 package com.parkingGestion;
 
-import java.util.ArrayList;
 
+import java.time.LocalDateTime;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
+
 
 
 public class parking {
 	
-	public static vehiculo [][] aparcamiento = new vehiculo [5][5];
+	public static plazas [][] aparcamiento = new plazas [5][5];
+	public static plazas especial[]= new plazas[5];
 	
 	
 	public static void menu() {//Menu de inicio con la funcion de salir
@@ -21,6 +22,7 @@ public class parking {
 			String color = "none";
 			String marca ="none";
 			int tipo=-1;
+			
 				resp= imprimirMenu(resp);
 				if (resp==0) {
 					
@@ -30,19 +32,27 @@ public class parking {
 										if (tipo==0) {
 											
 											matricula=matriculaVehiculo(matricula);
-											if(matricula!="null") {
+											System.out.println("matricula");
+											if(matricula!=null) {
 												marca=marcaVehiculo(marca);
-												if (marca!="null") {
+												if (marca!=null) {
 													color=colorVehiculo(color);
-													if(color!="null") {
+													if(color!=null) {
 														 for(int i = 0; i < 5; i++) {
 													            for (int j = 0; j < 5; j++) {													            	
 													            														            	
 													            	if (aparcamiento[i][j]== null) { 													            		
 													            		
-													            		aparcamiento[i][j]=  new coche( matricula,  marca ,color);
 													            		
+													            		
+													            		aparcamiento[i][j]=new plazas(new coche( matricula,  marca ,color),LocalDateTime.now() )  ;  // 
+												
+													            				
+													            				
+													            				
+													            				
 													            		System.out.println(aparcamiento[i][j]);
+													        
 														            	i=4;
 														            	j=4;
 														            	
@@ -60,17 +70,18 @@ public class parking {
 											
 										}else if(tipo==1) {
 											matricula=matriculaVehiculo(matricula);
-											if(matricula!="null") {
+											if(matricula!=null) {
 												marca=marcaVehiculo(marca);
-												if (marca!="null") {
+												if (marca!=null) {
 													color=colorVehiculo(color);
-													if(color!="null") {
+													if(color!=null) {
 														 for(int i = 0; i < 5; i++) {
 													            for (int j = 0; j < 5; j++) {													            	
 													            														            	
 													            	if (aparcamiento[i][j]== null) { 													            		
 													            		
-													            		aparcamiento[i][j]=  new moto( matricula,  marca ,color);
+													            		aparcamiento[i][j]=new plazas(new moto( matricula,  marca ,color),LocalDateTime.now() )  ;
+												
 														            	i=4;
 														            	j=4;
 														            	
@@ -84,17 +95,18 @@ public class parking {
 											
 										}else if(tipo==2) {
 											matricula=matriculaVehiculo(matricula);
-											if(matricula!="null") {
+											if(matricula!=null) {
 												marca=marcaVehiculo(marca);
-												if (marca!="null") {
+												if (marca!=null) {
 													color=colorVehiculo(color);
-													if(color!="null") {
+													if(color!=null) {
 														 for(int i = 0; i < 5; i++) {
 													            for (int j = 0; j < 5; j++) {													            	
 													            														            	
 													            	if (aparcamiento[i][j]== null) { 													            		
 													            		
-													            		aparcamiento[i][j]=  new furgoneta( matricula,  marca ,color);
+													            		aparcamiento[i][j]=new plazas(new furgoneta( matricula,  marca ,color),LocalDateTime.now() )  ;
+													            	
 														            	i=4;
 														            	j=4;
 														            	
@@ -107,9 +119,28 @@ public class parking {
 											}
 											
 										}else if(tipo==3) {
+											
+											
 											matricula=matriculaVehiculo(matricula);
-											marca=marcaVehiculo(marca);
-											color=colorVehiculo(color);
+											if(matricula!=null) {
+												marca=marcaVehiculo(marca);
+												if (marca!=null) {
+													color=colorVehiculo(color);
+													if(color!=null) {
+														 for(int i = 0; i < 5; i++) {
+														
+													            		especial[i]=new plazas(new caravana( matricula,  marca ,color),LocalDateTime.now() )  ;
+													            
+														            	i=4;
+														
+													        }
+														
+													}
+												}
+											}
+											
+											
+											
 											
 										}else if(tipo==4) {
 											resp=-1;
@@ -123,15 +154,7 @@ public class parking {
 				}else if(resp==1) {
 					aparcamiento();
 				
-					for(int i = 0; i < 5; i++) {
-						
-			            for (int j = 0; j < 5; j++) {													            	
-			            	System.out.print("|");					            	
-			            	System.out.print(aparcamiento[i][j]);
-			            }
-			            System.out.println("|");
-			            System.out.println("----------------------------------");	
-			        }
+					
 					
 					
 				}else if(resp==2) {
@@ -149,9 +172,8 @@ public class parking {
 					
 				}else if(resp==-1) { //es para volver cuando entras a un sub menu
 					
-					
-
-					System.out.println("Volviendo al menu inicial");
+						resp=4;
+						MensajeSalida();// saliendo de la aplicación
 					
 				}
 				else {
@@ -214,18 +236,69 @@ public class parking {
 	
 	
 	private static void aparcamiento() {
+		System.out.println("----------Aparcamientos normales-------------");
 		
-		for(int i=0;i<3;i++)
-		{    
-		    for(int j=0;j<3;j++){
-		    	JOptionPane.showMessageDialog(null,aparcamiento[i][j]+"|");
-		    }
-		    
-		}
-
 		
+		
+		for(int i = 0; i < 5; i++) {
+			
+            for (int j = 0; j < 5; j++) {	
+            	if(aparcamiento[i][j]!=null) {
+            		
+            		System.out.print("|");					            	
+                	System.out.print(aparcamiento[i][j].getVehiculo().getMatricula());
+            	}else {
+            		System.out.print("|");
+            		System.out.print("Libre");
+            	}
+            	
+            }
+            System.out.println("|");
+            System.out.println("----------------------------------");	
+            
+            
+            
+            
+        }
+		System.out.println("--------Aparcamiento caravanas-----------------");
+			for(int i = 0; i < 5; i++) {
+				if (especial[i]!= null) {
+					System.out.print("|");					            	
+	            	System.out.print(especial[i].getVehiculo().getMatricula());
+	            	System.out.println("|");
+				}
+				else {
+					System.out.print("|");
+					System.out.print("Libre");
+					System.out.println("|");
+				}											            	
+            	
+            
+            System.out.println("----------------------------------");	
+        }	
 	
 	}
+	/*
+	
+	private static plazas[][] busquedaMatricula(String matricula) {
+				for(int i = 0; i < 5; i++) {
+			
+					for (int j = 0; j < 5; j++) {	
+            	
+            		if(aparcamiento[i][j].getVehiculo().getMatricula()== matricula)				            	
+                	System.out.println("matricula : "+aparcamiento[i][j].getVehiculo().getMatricula());
+            		System.out.println("Marca : "+aparcamiento[i][j].getVehiculo().getMarca());
+            		System.out.println("Color : "+aparcamiento[i][j].getVehiculo().getColor());
+            		return aparcamiento[i][j];
+            		
+            	}
+            	
+            
+			}
+		}
+		
+	
+	*/
 	
 	
 	

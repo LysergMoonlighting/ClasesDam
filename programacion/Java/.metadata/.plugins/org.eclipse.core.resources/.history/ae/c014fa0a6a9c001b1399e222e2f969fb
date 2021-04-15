@@ -1,0 +1,5 @@
+package agroalimentaria;
+
+public class CongeladosAire extends Congelados{
+
+}

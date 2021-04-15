@@ -1,0 +1,9 @@
+package agroalimentaria;
+
+import java.time.LocalDateTime;
+
+public final class CongeladosNitrogeno extends Congelados{
+	private LocalDateTime exposicion;
+
+
+}

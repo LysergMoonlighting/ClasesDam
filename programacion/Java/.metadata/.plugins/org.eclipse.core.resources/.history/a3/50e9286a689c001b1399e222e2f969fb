@@ -1,0 +1,11 @@
+package agroalimentaria;
+
+import java.time.LocalDateTime;
+
+public class Refrigerados extends Productos{
+	String codOrganismo;
+	float temperatura;
+	String tipoTemperatura;
+	LocalDateTime envasado;
+	String paisOrigen;
+}

@@ -1,0 +1,22 @@
+package agroalimentaria;
+
+import java.time.LocalDateTime;
+
+import com.parkingGestion.caravana;
+import com.parkingGestion.coche;
+import com.parkingGestion.furgoneta;
+import com.parkingGestion.moto;
+import com.parkingGestion.plazas;
+
+public class Almacén {
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+}

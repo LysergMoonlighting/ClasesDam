@@ -1,0 +1,17 @@
+package com.parkingGestion;
+
+import java.time.LocalDateTime;
+
+public class registro {
+	
+	String matricula;
+	LocalDateTime horaEntrada;
+	
+	public registro(String matricula, LocalDateTime horaEntrada) {
+		super();
+		this.matricula = matricula;
+		this.horaEntrada = horaEntrada;
+	}
+
+	
+}

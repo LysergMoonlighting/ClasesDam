@@ -1,0 +1,8 @@
+package agroalimentaria;
+
+import java.time.LocalDateTime;
+
+public class Frescos extends Productos{
+	LocalDateTime fechaEnvasado;
+	String paisOrigen;
+}

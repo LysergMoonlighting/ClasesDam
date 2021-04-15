@@ -1,0 +1,9 @@
+package com.parkingGestion;
+
+public class registro {
+	
+	String matricula;
+	String horaEntrada;
+
+	
+}

@@ -1,6 +1,0 @@
-package com.parkingGestion;
-
-public class vehiculo {
-	String matricula;
-	
-}

@@ -1,0 +1,18 @@
+package agroalimentaria;
+
+import java.time.LocalDateTime;
+
+public final class CongeladosAgua extends Congelados{
+	private float salinidad;
+
+	public CongeladosAgua(String lote, LocalDateTime caducidad, LocalDateTime envasado, String paisOrigen,
+			float temperatura, String tipoTemperatura, float salinidad) {
+		super(lote, caducidad, envasado, paisOrigen, temperatura, tipoTemperatura);
+		this.salinidad = salinidad;
+	}
+
+	
+	
+	
+	
+}

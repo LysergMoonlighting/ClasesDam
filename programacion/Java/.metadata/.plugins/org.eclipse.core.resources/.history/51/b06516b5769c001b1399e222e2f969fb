@@ -1,0 +1,25 @@
+package agroalimentaria;
+
+import java.time.LocalDateTime;
+
+public final class  CongeladosAire extends Congelados{
+	private float nitrogeno;
+	private float oxigeno;
+	private float co2;
+	private float vaporAgua;
+	
+	
+	public CongeladosAire(String lote, LocalDateTime caducidad, LocalDateTime envasado, String paisOrigen,
+			float temperatura, String tipoTemperatura, float nitrogeno, float oxigeno, float co2, float vaporAgua) {
+		super(lote, caducidad, envasado, paisOrigen, temperatura, tipoTemperatura);
+		this.nitrogeno = nitrogeno;
+		this.oxigeno = oxigeno;
+		this.co2 = co2;
+		this.vaporAgua = vaporAgua;
+	}
+	
+	
+	
+	
+	
+}

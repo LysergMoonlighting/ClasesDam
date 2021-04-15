@@ -1,0 +1,17 @@
+package com.parkingGestion;
+import java.time.LocalDateTime;
+
+public class plazas {
+
+	private vehiculo vehiculo;
+	private  LocalDateTime hora;
+	
+	
+	public plazas(com.parkingGestion.vehiculo vehiculo, LocalDateTime hora) {
+		super();
+		this.vehiculo = vehiculo;
+		this.hora = hora;
+	}
+	
+	
+}

@@ -1,0 +1,18 @@
+package agroalimentaria;
+
+import java.time.LocalDateTime;
+
+public abstract class Congelados extends Productos{
+	private float temperatura;
+	private String tipoTemperatura;
+	
+	
+	public Congelados(String lote, LocalDateTime caducidad, LocalDateTime envasado, String paisOrigen,
+			float temperatura, String tipoTemperatura) {
+		super(lote, caducidad, envasado, paisOrigen);
+		this.temperatura = temperatura;
+		this.tipoTemperatura = tipoTemperatura;
+	}
+	
+	
+}

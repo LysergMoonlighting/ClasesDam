@@ -1,0 +1,10 @@
+package agroalimentaria;
+import java.time.LocalDateTime;
+
+public class Productos {
+
+		String lote;
+		LocalDateTime caducidad;
+		LocalDateTime envasado;
+		String paisOrigen;
+}

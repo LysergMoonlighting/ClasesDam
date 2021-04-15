@@ -1,0 +1,8 @@
+package agroalimentaria;
+
+public final class  CongeladosAire extends Congelados{
+	float nitrogeno;
+	float oxigeno;
+	float co2;
+	float vaporAgua;
+}
