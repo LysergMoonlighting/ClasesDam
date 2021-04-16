@@ -1,0 +1,14 @@
+package es.inmobiliaria;
+
+public abstract class Habitable extends Inmueble{
+	private int dormitorios;
+	private int baños;
+	
+	
+	public Habitable(String direccion, float superficie, String propietario, int dormitorios, int baños) {
+		super(direccion, superficie, propietario);
+		this.dormitorios = dormitorios;
+		this.baños = baños;
+	}
+	
+}

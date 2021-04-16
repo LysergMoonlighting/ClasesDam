@@ -1,0 +1,9 @@
+package com.tiendaDeInmuebles;
+
+
+public class Aplicacion {
+	public static void main(String[] args) {
+		Gestion.menu();
+
+	}
+}

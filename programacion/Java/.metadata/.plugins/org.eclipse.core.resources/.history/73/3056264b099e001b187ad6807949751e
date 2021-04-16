@@ -1,0 +1,5 @@
+package es.inmobiliaria;
+
+public abstract class Habitable extends Inmueble{
+
+}

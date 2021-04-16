@@ -1,0 +1,7 @@
+package es.inmobiliaria;
+
+public class Local extends Inmueble {
+
+	String actividadComercial;
+	
+}

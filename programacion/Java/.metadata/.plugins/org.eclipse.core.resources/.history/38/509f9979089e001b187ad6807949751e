@@ -1,0 +1,5 @@
+package com.tiendaDeInmuebles;
+
+public abstract class Inmueble {
+
+}

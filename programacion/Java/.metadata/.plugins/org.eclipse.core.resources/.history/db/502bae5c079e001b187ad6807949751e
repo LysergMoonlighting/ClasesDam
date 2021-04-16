@@ -1,0 +1,5 @@
+package com.tiendaDeInmuebles;
+
+public class Habitable extends Inmueble{
+
+}
