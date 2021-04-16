@@ -1,6 +1,0 @@
-package es.inmobiliaria;
-
-public abstract class Habitable extends Inmueble{
-	int dormitorios;
-	int baños;
-}

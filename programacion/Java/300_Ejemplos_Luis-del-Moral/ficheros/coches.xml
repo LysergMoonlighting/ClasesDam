@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concesionario>
+    <coche id="1">
+        <marca>SEAT</marca>
+        <modelo>LEÓN</modelo>
+        <cilindrada>1600</cilindrada>
+    </coche>
+    <coche id="2">
+        <marca>SEAT</marca>
+        <modelo>IBIZA</modelo>
+        <cilindrada>1200</cilindrada>
+    </coche>    
+</concesionario>

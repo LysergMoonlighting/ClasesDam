@@ -1,7 +1,0 @@
-package es.inmobiliaria;
-
-public class Cochera extends Inmueble {
-	private int plazas;
-	private boolean trastero;
-	
-}

@@ -1,5 +1,0 @@
-package es.inmobiliaria;
-
-public class Cochera extends Inmueble {
-
-}

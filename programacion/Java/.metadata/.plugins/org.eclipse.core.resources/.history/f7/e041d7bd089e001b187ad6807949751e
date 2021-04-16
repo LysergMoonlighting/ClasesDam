@@ -1,8 +1,0 @@
-package es.inmobiliaria;
-
-public abstract class Inmueble {
-	String direccion;
-	float superficie;
-	String propietario;
-	
-}

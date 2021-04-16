@@ -1,5 +1,0 @@
-package es.inmobiliaria;
-
-public class Casa extends Habitable{
-	private int plantas;
-}

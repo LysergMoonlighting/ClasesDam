@@ -1,5 +1,0 @@
-package com.tiendaDeInmuebles;
-
-public class Local extends Inmueble {
-
-}
