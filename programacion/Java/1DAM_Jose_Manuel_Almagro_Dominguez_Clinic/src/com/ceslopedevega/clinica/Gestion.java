@@ -45,7 +45,21 @@ public class Gestion {
 	
 	private static int imprimirMenu(){//mensaje que muestra el menu para el cliente
 		int resp;
-	    String [] opciones = {"Nuevo producto","Listado","Buscar","Salir"};
+	    String [] opciones = {"Nueva persona","Listado","Buscar","Salir"};
+	    resp= JOptionPane.showOptionDialog(null,"Seleccione la opción que desea efectuar" , "Menu" , JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, opciones, null);
+	    return resp;
+	
+	}
+	private static int tipoPersona(){//mensaje que muestra el menu para el cliente
+		int resp;
+	    String [] opciones = {"Paciente","Medico","Volver"};
+	    resp= JOptionPane.showOptionDialog(null,"Seleccione la opción que desea efectuar" , "Menu" , JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, opciones, null);
+	    return resp;
+	
+	}
+	private static int tipoMedico(){//
+		int resp;
+	    String [] opciones = {"Especialista","Cabecera","Volver"};
 	    resp= JOptionPane.showOptionDialog(null,"Seleccione la opción que desea efectuar" , "Menu" , JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, opciones, null);
 	    return resp;
 	

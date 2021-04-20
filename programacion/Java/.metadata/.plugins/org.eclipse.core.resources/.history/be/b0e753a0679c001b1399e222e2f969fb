@@ -1,7 +1,0 @@
-package agroalimentaria;
-
-public class Productos {
-
-		String lote;
-		
-}

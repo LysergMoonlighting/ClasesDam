@@ -1,8 +1,0 @@
-package com.parkingGestion;
-import java.time.LocalDateTime;
-public class plazas {
-
-	private vehiculo vehiculo;
-	private static LocalDateTime hora = LocalDateTime.now();
-	
-}

@@ -1,6 +1,0 @@
-package agroalimentaria;
-
-public class Congelados extends Productos{
-	float temperatura;
-	String tipoTemperatura;
-}

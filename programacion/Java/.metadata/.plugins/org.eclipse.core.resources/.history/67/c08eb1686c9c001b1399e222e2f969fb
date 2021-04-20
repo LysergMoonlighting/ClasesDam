@@ -1,7 +1,0 @@
-package agroalimentaria;
-
-
-
-public final class Frescos extends Productos{
-	
-}

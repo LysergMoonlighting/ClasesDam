@@ -1,9 +1,0 @@
-package com.parkingGestion;
-import java.time.LocalDateTime;
-
-public class registro {
-
-	LocalDateTime();
-	
-	
-}

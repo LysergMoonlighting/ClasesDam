@@ -1,5 +1,0 @@
-package agroalimentaria;
-
-public final class CongeladosAgua extends Congelados{
-	float salinidad;
-}
