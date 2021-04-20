@@ -1,0 +1,18 @@
+<!ELEMENT pedido (cabecera, lineas+)>
+
+<!ELEMENT cabecera (cliente+)>
+<!ELEMENT cliente (nombre, apellido, cif, direccion, pvp, telefono, correo)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT cif (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT pvp (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT correo (#PCDATA)>
+<!ELEMENT lineas (nombre, codigo, cantidad, pvp, sinIVA)>
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT sinIVA (#PCDATA)>
+
+
+

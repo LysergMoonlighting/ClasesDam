@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE pedido SYSTEM "Ejercicio2.dtd">
+<pedido>
+
+  <cabecera>
+      <cliente>
+        <nombre>Jose MAnuel</nombre>
+        <apellido>Almagro Domínguez</apellido>
+        <cif>46074832J</cif>
+        <direccion>Calle por defecto 1</direccion>
+        <pvp>155</pvp>
+        <telefono>666666666</telefono>
+        <correo>micorreo@gmail.com</correo>
+        
+    </cliente>
+    
+    <cliente>
+        <nombre>Latuki</nombre>
+        <apellido>de martuki la tuki</apellido>
+        <cif>321321321B</cif>
+        <direccion>calle España profunda</direccion>
+        <pvp>11</pvp>
+        <telefono>666666666</telefono>
+        <correo>dmatukitukilocooo@gmail.com</correo>
+        
+    </cliente>
+  
+    </cabecera> 
+    <lineas>
+      <nombre>papaia</nombre>
+      <codigo>000123</codigo>
+      <cantidad>10</cantidad>
+      <pvp>13€</pvp>
+      <sinIVA>8€</sinIVA>
+    </lineas>  
+    
+    <lineas>
+      <nombre>croquetas de jamon</nombre>
+      <codigo>4321</codigo>
+      <cantidad>20</cantidad>
+      <pvp>20€</pvp>
+      <sinIVA>12€</sinIVA>
+    </lineas>  
+    
+    
+</pedido>
+
+

@@ -108,11 +108,6 @@ public static void menu() {//Menu de inicio con la funcion de salir
 		
 		}
 		
-		
-		
-		
-		
-		
 
 		private static void MensajeSalida()// ventana emergente de salida
 		{

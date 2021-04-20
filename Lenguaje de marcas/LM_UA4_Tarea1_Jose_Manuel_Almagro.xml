@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE estudiantes SYSTEM "Ejercicio1.dtd">
+<estudiantes>
+
+    <estudiante>
+        <dni>00000000A</dni>
+        <nombre>Josepe</nombre>
+        <apellido>Clavo Peludo</apellido>
+        <telefono>666666666</telefono>
+        <fechaNacimiento>10-01-21</fechaNacimiento>
+        <nacionalidad>Española</nacionalidad>
+        <direccion>calle ejemplo 1</direccion>
+        <correo>esomismo@gmail.com</correo>
+        <curso>1ºDAM</curso>
+        <esRepetidor>no</esRepetidor>
+    </estudiante>
+
+    <estudiante>
+        <dni>000000000B</dni>
+        <nombre>Margarita</nombre>
+        <apellido>Flores Campo</apellido>
+        <telefono>698741235</telefono>
+        <fechaNacimiento>26-12-12</fechaNacimiento>
+        <nacionalidad>Francesa</nacionalidad>
+        <direccion>calle ejemplo 2</direccion>
+        <correo>Posestemismo@gmail.com</correo>
+        <curso>1ºDAM</curso>
+        <esRepetidor>si</esRepetidor>
+    </estudiante>
+
+    <estudiante>
+        <dni>000000000C</dni>
+        <nombre>Concha</nombre>
+        <apellido>Pescado Holganza</apellido>
+        <telefono>632145789</telefono>
+        <fechaNacimiento>24-11-02</fechaNacimiento>
+        <nacionalidad>Española</nacionalidad>
+        <direccion>calle ejemplo 3</direccion>
+        <correo>aquihyuele@gmail.com</correo>
+        <curso>2ºDAM</curso>
+        <esRepetidor>no</esRepetidor>
+    </estudiante>
+
+    <estudiante>
+        <dni>000000000D</dni>
+        <nombre>Marciano</nombre>
+        <apellido>Júpiter Espacio</apellido>
+        <telefono>654789321</telefono>
+        <fechaNacimiento>26-11-02</fechaNacimiento>
+        <nacionalidad>Española</nacionalidad>
+        <direccion>calle ejemplo 4</direccion>
+        <correo>espaciosideral@gmail.com</correo>
+        <curso>2ºESO</curso>
+        <esRepetidor>no</esRepetidor>
+    </estudiante>
+
+    <estudiante>
+        <dni>000000000F</dni>
+        <nombre>El</nombre>
+        <apellido>Pepe Potaxio</apellido>
+        <telefono>616352424</telefono>
+        <fechaNacimiento>05-02-01</fechaNacimiento>
+        <nacionalidad>Española</nacionalidad>
+        <direccion>calle ejemplo 5</direccion>
+        <correo>Conarrozblanco@gmail.com</correo>
+        <curso>1ºESO</curso>
+        <esRepetidor>no</esRepetidor>
+    </estudiante>
+
+    <estudiante>
+        <dni>000000000G</dni>
+        <nombre>Laver</nombre>
+        <apellido>Ganza Muñoz</apellido>
+        <telefono>622 91 59 66</telefono>
+        <fechaNacimiento>08-06-01</fechaNacimiento>
+        <nacionalidad>Brasileño</nacionalidad>
+        <direccion>calle ejemplo 6</direccion>
+        <correo>minombreesgracisoo@gmail.com</correo>
+        <curso>4ºESO</curso>
+        <esRepetidor>si</esRepetidor>
+    </estudiante>
+
+</estudiantes>
