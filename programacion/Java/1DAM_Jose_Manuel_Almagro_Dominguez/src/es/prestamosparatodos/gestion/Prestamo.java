@@ -55,5 +55,7 @@ public class Prestamo {
 		return "Prestamo [capital=" + capital + ", interesAnual=" + interesAnual + ", plazo=" + plazo + ", prestatario="
 				+ prestatario + "]";
 	}
+
+	
 	
 }

@@ -22,7 +22,19 @@ class PruebasGestion {
 			prestamo.calcularPrestamo();
 			prestamos.add(prestamo);
 			
-}
+			}
+			for(int i = 1; i < 6; i++) {
+				
+				float capital=1000*i;
+				float interesAnual=1*i;
+				int plazo=1*i;
+				float euribor=20*i;
+				String prestatario="pepe"+i;
+				PrestamoHipotecario prestamo = new PrestamoHipotecario(capital, interesAnual, plazo, prestatario,euribor);
+				prestamo.calcularPrestamo();
+				prestamos.add(prestamo);
+				
+				}
 	}
 	
 	
@@ -37,9 +49,72 @@ class PruebasGestion {
 					prueba =5;
 			}
 		 if (prueba==0) {
-			 fail("Not yet implemented");
+			 fail("No se introducen bien los nombres");
 		 }
 	}
 	
+	@Test
+	void probarInteresesPresonales() {
+		introducirValores();
+		 float interes =661.3037f;
+		 int prueba = 0;
+		 for(Prestamo prestamo : prestamos)
+			{	
+			 	if(prestamo instanceof PrestamoPersonal) {
+			 		
+			 		PrestamoPersonal prestamoPersonal =(PrestamoPersonal) prestamo;
+			 		
+			 		if(prestamoPersonal.getIntereses()==interes)
+						prueba =5;
+			 	}
+			 
+				
+			}
+		 if (prueba==0) {
+			 fail("El valor de prestamo no calcula bien");
+		 }
+	}
+	@Test
+	void probarInteresesMensualPersonales() {
+		introducirValores();
+		 float cuota =83.779526f;
+		 int prueba = 0;
+		 for(Prestamo prestamo : prestamos)
+			{	
+			 	if(prestamo instanceof PrestamoPersonal) {
+			 		
+			 		PrestamoPersonal prestamoPersonal =(PrestamoPersonal) prestamo;
+			 		
+			 		if(prestamoPersonal.getCuotaMensual()==cuota)
+						prueba =5;
+			 	}
+			 
+				
+			}
+		 if (prueba==0) {
+			 fail("El valor de prestamo no calcula bien");
+		 }
+	}
+	@Test
+	void probarInteresesMensualHipotecario() {
+		introducirValores();
+		 float cuota =103.779526f;
+		 int prueba = 0;
+		 for(Prestamo prestamo : prestamos)
+			{	
+			 	if(prestamo instanceof PrestamoHipotecario) {
+			 		
+			 		PrestamoHipotecario prestamohipotecario =(PrestamoHipotecario) prestamo;
+			 		
+			 		if(prestamohipotecario.getCuotaMensual()==cuota)
+						prueba =5;
+			 	}
+			 
+				
+			}
+		 if (prueba==0) {
+			 fail("El valor de prestamo no calcula bien");
+		 }
+	}
 
 }

@@ -68,5 +68,6 @@ public class PrestamoHipotecario extends Prestamo {
 		this.interesMensual = (super.getInteresAnual() / 100) / 12;
 		this.cuotaMensual = (float) ((super.getCapital() * this.interesMensual) / (1 - Math.pow(1 + this.interesMensual, -1 * 12 * super.getPlazo()))) + euribor;
 		this.intereses = (super.getPlazo() * 12 * this.cuotaMensual) - super.getCapital();
+		System.out.println((float) ((super.getCapital() * this.interesMensual) / (1 - Math.pow(1 + this.interesMensual, -1 * 12 * super.getPlazo()))) + euribor);
 	}	
 }
