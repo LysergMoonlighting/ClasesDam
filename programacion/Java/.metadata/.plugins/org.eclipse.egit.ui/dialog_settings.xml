@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel" value="0"/>
-	<item key="GitSelectRepositoryPage.lastRepository" value="D:\Lyserg\git\Haz-la-guerra-y-no-el-amor\.git"/>
+	<item key="GitSelectRepositoryPage.lastRepository" value="C:\xampp\htdocs\Haz-la-guerra-y-no-el-amor\.git"/>
 	<list key="RepositorySelectionPage.UsedUris">
 		<item value="https://github.com/spiderfan211/Haz-la-guerra-y-no-el-amor"/>
 	</list>
